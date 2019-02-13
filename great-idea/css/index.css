@@ -1,8 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,55 +11,153 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif; }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px; }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%; }
+
+button {
+  background: white;
+  padding: 2px 20px;
+  border: 1px solid black;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px; }
+
+p {
+  font-size: 16px;
+  padding-right: 5px; }
+
+section {
+  padding: 20px 0; }
+
+main {
+  padding: 20px 0;
+  margin: 20px 0; }
+
+.bordered {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.big-text {
+  font-size: 60px; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.flex {
+  width: 100%;
+  margin: 0 auto;
+  display: flex; }
+
+.center-text {
+  text-align: center; }
+
+.navbar {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin-bottom: 20px; }
+  .navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: grey; }
+    .navbar a:hover {
+      text-decoration: underline;
+      color: black; }
+
+.nav-links {
+  align-self: center; }
+  .nav-links .nav-link {
+    margin-right: .5rem; }
+
+.logo {
+  align-self: center; }
+
+.section-1 {
+  padding: 20px 0; }
+
+.center {
+  justify-content: center; }
+
+.space-between {
+  justify-content: space-between; }
+
+.half {
+  width: 49%; }
+
+.img-wrapper {
+  display: flex;
+  background: #000;
+  margin: auto; }
+
+.verticle {
+  align-self: center; }
+
+.circle-img {
+  padding: 20px 0;
+  width: 200px;
+  height: auto; }
+
+.underline {
+  border-bottom: 1px solid darkslategray; }
+
+address * {
+  font-size: 14px; }
+address p:not(.street) {
+  line-height: 2.5; }
+
+.copyright {
+  font-size: 12px; }
+
+/*# sourceMappingURL=index.css.map */
