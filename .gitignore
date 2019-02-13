@@ -1,1 +1,5 @@
 .DS_Store
+
+great-idea/\.sass-cache/
+
+\.vscode/
