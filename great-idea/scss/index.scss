@@ -1,141 +1,202 @@
 @import "base";
+// Variables
+$light: rgb(241, 239, 239);
+$grey: rgb(148, 137, 137);
+$highlight: rgb(48, 111, 228);
+$border-style: 1px solid black;
 
-// body {
-//     background: lightblue;
-// }
+body {
+  font-size: 16px;
+  padding-right: 5px;
+  font-family: "Titillium Web", sans-serif;
+}
 
 img {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 button {
-    background: white;
-    padding: 2px 20px;
-    border: 1px solid black;
-    font-family: 'Titillium Web', sans-serif;
-    letter-spacing: 1px;
-    font-size: 15px;
-}
-
-p {
-    font-size: 16px;
-    padding-right: 5px;
-
+  background: white;
+  padding: 2px 20px;
+  border: $border-style;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
 section {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
-main {
-    padding: 20px 0;
-    margin: 20px 0;
+address {
+  * {
+    font-size: 14px;
+  }
+  p:not(.street) {
+    line-height: 2.5;
+  }
+}
+
+.list {
+  list-style-position: inside;
+  list-style-type: disc;
+  li {
+    margin-bottom: 0.25rem;
+    span {
+      color: black;
+    }
+    &:hover {
+      color: $highlight;
+    }
+  }
 }
 
 .bordered {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  border-top: $border-style;
+  border-bottom: $border-style;
 }
-
+.m-bottom {
+  margin-bottom: 1rem;
+}
+.m-bottom-sm {
+  margin-bottom: 0.25rem;
+}
 .big-text {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .flex {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
 }
 
-
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar {
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    margin-bottom: 20px;
-    a {
-        font-size: 16px;
-        text-decoration: none;
-        color: grey;
-        &:hover {
-            text-decoration: underline;
-            color: black;
-        }
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin-bottom: 20px;
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: $grey;
+    &:hover {
+      text-decoration: underline;
+      color: black;
     }
+  }
 }
 
 .nav-links {
-    align-self: center;
-    .nav-link {
-        margin-right: .5rem;
-    }
+  align-self: center;
+  .nav-link {
+    margin-right: 0.5rem;
+  }
 }
 
-
 .logo {
-    align-self: center;
+  align-self: center;
 }
 
 .section-1 {
-    padding: 20px 0;
-
+  padding: 20px 0;
 }
 
 .center {
-    justify-content: center;
+  justify-content: center;
 }
 .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .half {
-    width: 49%;
+  width: 50%;
 }
 
 .img-wrapper {
-    display: flex;
-    background: #000;
-    margin: auto;
+  display: flex;
+  background: #000;
+  margin: auto;
 }
 
 .verticle {
-    align-self: center;
+  align-self: center;
 }
 
 .circle-img {
-    padding: 20px 0;
-    width: 200px;
-    height: auto;
+  padding: 20px 0;
+  width: 200px;
+  height: auto;
 }
 
 .underline {
-    border-bottom: 1px solid darkslategray;
+  border-bottom: 1px solid $grey;
 }
 
-
-address {
-   *{
-    font-size: 14px;
-   }
-   p:not(.street) {
-    line-height: 2.5;
-   }
+.wrapper {
+  p {
+    padding-right: 1rem;
+  }
 }
-
 
 .copyright {
-    font-size: 12px;
+  font-size: 12px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 49%;
+  //   margin: 1rem;
+  padding: 1rem;
+  margin-bottom: 10px;
+  background: $light;
+  p {
+    line-height: 1.25;
+  }
+}
+
+.card-btn {
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.info {
+  line-height: 1.25;
+}
+
+.img-fluid {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+  }
+}
+.services-info {
+  margin: 0;
+  //   background-position: center;
+  //   background-size: cover;
+  //   height: 450px; //whatever height you want
 }
